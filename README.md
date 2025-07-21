@@ -34,4 +34,5 @@ Make sure you have the following installed:
 npm install # or yarn
 
 ### Running the App
+cd StickerSmash
 npx expo start
