@@ -10,15 +10,11 @@ type Props = PropsWithChildren<{
 export default function EmojiPicker({ isVisible, children, onClose }: Props) {
   return (
     <View>
-    <Modal animationType="slide" transparent={true} visible={isVisible}> /** Modal displays a title and a close button */
-      /** "visible" takes the value of isBisible and controls whether the modal is open or closed,
-      "transparent" is bool and determines whether the modal fills the entire view,
-      "animationType" determines how it enters and leaves the screen. e.g. sliding from bottom */
+    <Modal animationType="slide" transparent={true} visible={isVisible}> 
       <View style={styles.modalContent}>
         <View style={styles.titleContainer}>
           <Text style={styles.title}>Choose a sticker</Text>
           <Pressable onPress={onClose}>
-            /** invokes */
             <MaterialIcons name="close" color="#fff" size={22} />
           </Pressable>
         </View>
